@@ -1,0 +1,11 @@
+,fitness,expression,depth,length
+alpha_10,325.90564343473545,"delta(div(stddev(stddev(ts_max(avg))), stddev(ts_rank(ts_argmin(close)))))",5,10
+alpha_9,413.3859003388035,"sub(ts_rank(delay(mul(delta(sma(open)), div(ts_argmin(low), ts_max(open))))), stddev(ts_max(rank(product(ts_argmax(avg))))))",6,18
+alpha_8,1920.027584035547,delta(pre_close),1,2
+alpha_7,2802.295584035547,delta(delay(delay(open))),3,4
+alpha_5,3241.3945840355473,"rank(ts_rank(div(high, pre_close)))",3,5
+alpha_6,3241.3955840355475,rank(ts_rank(ts_argmin(high_limit))),3,4
+alpha_4,19240.87958403555,"mul(delay(mul(rank(ts_argmin(delta(low))), ts_argmin(sma(ts_sum(pre_close))))), delta(rank(mul(ts_sum(ts_min(-0.373)), ts_sum(stddev(high_limit))))))",6,20
+alpha_3,77462711134.39458,product(ts_argmin(product(ts_rank(pre_close)))),4,5
+alpha_2,1310426568008652.2,product(delta(close)),2,3
+alpha_1,2.5330791293385023e+50,"mul(product(sub(open, ts_sum(close))), ts_max(add(sma(open), ts_sum(mul(low, pre_close)))))",5,14
